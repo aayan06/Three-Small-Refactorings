@@ -30,10 +30,8 @@
 
     function update() {
       
-        let item = preset[0];
-        for (let i = 0; i < preset.length; i++) {
-          if (i === active) item = preset[i];
-        }
+        let item = preset[active];
+        
         label.textContent = item.name;
         swatch.style.backgroundColor = item.color;
       
